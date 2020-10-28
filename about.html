@@ -8,7 +8,7 @@
 </head>
 <body>
     <!--Nav-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <a class="navbar-brand" href="index.html">Health Pups</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -16,13 +16,10 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="pricing.html">Pricing <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#features">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pricing.html">Pricing</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
           </ul>
           <span class="navbar-text">
@@ -30,7 +27,43 @@
           </span>
         </div>
     </nav>
-
+    <!--About Me-->
+    <div class="container">
+        <div class="jumbotron" style="background-color: rgb(227, 249, 255)">
+            <div class="container text-center"><h4>About me</h4></div>
+            <div class="container d-flex flex-row">
+                <!--About Me Col1-->
+                <div class="column">
+                    <figure>
+                        <img src="images/IMG_20190918_164738.jpg" width="200" height="275">
+                        <figcaption class="text-center" style="opacity: .8;">Me</figcaption>
+                    </figure>
+                </div>
+                <!--About Me Col2-->
+                <div class="column">
+                    <ul class="list-group text-center">                        
+                        <li class="list-group">Hi! I am Chaoneng Tan, an 18-year-old Chinese-American young-adult male pursuing a software engineer degree and trying to make an impact on the world.<br></li>
+                        <li class="list-group">I live in Oakland, California and I enjoy playing games, reading light novels, and watching anime.<br></li>
+                        <li class="list-group">Influenced by the economy around me, my passion for programming stems from creative arts.</li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--About Health Pups-->
+    <div class="container mb-5 mt-5 pb-5 pt-5 text-center">
+        <h4>Why Health Pups</h4>
+        <div class="jumbotron d-flex row-lg-4" style="background-color: rgb(227, 249, 255)">
+            <div class="col-lg-4">
+                <p class="lead">This is an assignment-classed page as an exersise for SPD1.2 course</p>
+            </div>
+            <div class="col-lg-4">
+                <p class="lead">More information can be obtained <a href="https://make-school-courses.github.io/SPD-1.2-Agile-Development-UI-UX/#/">here</a> about the course</p>                    </div>
+            <div class="col-lg-4">
+                <p class="lead">More information can me obtained <a href="https://github.com/ChaonengTan/SPD1.2-3PageBootstrapSite">here</a> about this page</p>
+            </div>
+        </div>
+    </div>
     <!--Footer-->
     <div class="card text-center" style="background-color: lightgrey;">
         <div class="card-body">
@@ -50,6 +83,12 @@
     .carousel-inner{
         width: 100%;
         max-height: 500px !important;
+    }
+    .column {
+        -ms-flex-align: center!important;
+        align-items: center!important;
+        display: flex;
+        justify-content: center;
     }
 </style>
 </html>
